@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  direction: ltr;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  font-size: 16px;
+}
+.container {
+  width: 100%;
+}
+.container .phone {
+  width: 400px;
+  margin: 0px auto;
+  background-color: rgb(0, 0, 0, 0.02);
+  min-height: 100vh;
+}
+/* footer */
+.footer {
+  width: 400px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer a {
+  color: #333;
+  font-size: 1.5em;
+}
+.footer img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+/* head nav */
+.head-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.head-nav .right {
+}
+.head-nav .right i {
+  font-size: 1.5em;
+  color: #333;
+  padding: 10px;
+}
+.head-nav .left {
+}
+.head-nav .left span {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+  margin-right: 5px;
+}
+.head-nav .left i {
+}
+/* profile */
+.profile {
+  padding: 10px;
+}
+.profile .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile .info .image {
+  position: relative;
+}
+.profile .info .image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.profile .info .image .plus {
+  position: absolute;
+  bottom: 0px;
+  right: -2px;
+  color: #1e95f1;
+  font-size: 1.6em;
+  border: 3px solid white;
+  border-radius: 50%;
+  display: flex;
+}
+.profile .info .image .thought {
+  position: absolute;
+  top: -30px;
+  left: 5px;
+  font-size: 3.5em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.profile .info .image .thought span {
+  position: absolute;
+  color: #666;
+  top: 18px;
+  left: 10px;
+  font-size: 0.2em;
+}
+.profile .info .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile .info .item .number {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.profile .info .item .title {
+  font-size: 1.2em;
+  color: #333;
+}
+/* caption */
+.caption {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.caption .id {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.caption .tag {
+  font-size: 1.1em;
+  color: #1e95f1;
+}
+/* edit profile */
+.edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.edit .edit-profile,
+.edit .share-profile,
+.edit .icon {
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.06);
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  flex-grow: 5;
+  text-align: center;
+  margin: 2px;
+}
+.edit .edit-profile {
+  margin-left: 6px;
+}
+.edit .icon {
+  margin-right: 6px;
+  flex-grow: 1;
+}
+/* highlight */
+.highlight {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+.highlight .add-highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.highlight .add-highlight .add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  width: 67px;
+  height: 67px;
+  border: 2px solid #6666;
+  border-radius: 50%;
+  margin: 5px;
+}
+.highlight .add-highlight span {
+}
+.highlight .story-highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.highlight .story-highlight .image-highlight {
+  padding: 3px;
+  border: 2px solid #6666;
+  border-radius: 50%;
+  display: flex;
+  margin: 5px;
+}
+.highlight .story-highlight .image-highlight img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.highlight .story-highlight span {
+}
+/* navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+.navigation div {
+  flex: 1;
+  text-align: center;
+}
+.navigation div {
+  color: #777;
+  font-size: 1.5em;
+  padding: 15px;
+}
+.nav-active i {
+  color: #333;
+}
+.nav-active {
+  border-bottom: 2px solid #333;
+}
+/* post */
+.post {
+}
+.post .post-image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, auto);
+  gap: 2px;
+}
+.post .post-image img {
+  width: 132px;
+  height: 132px;
+}
